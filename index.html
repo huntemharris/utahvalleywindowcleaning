@@ -258,13 +258,17 @@
   </div>
 </section>
 
-<section id="contact" class="contact-box">
+<section id="contact-bottom" class="contact-box">
   <h2>Get Your Free Quote</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="tel" placeholder="Phone Number" required />
-    <input type="email" placeholder="Email Address" />
-    <textarea placeholder="How can we help you?"></textarea>
+
+  <form
+    action="https://formspree.io/f/xqeebgna"
+    method="POST"
+  >
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <input type="email" name="email" placeholder="Email Address" />
+    <textarea name="message" placeholder="What services do you want us to include in your quote?"></textarea>
     <button class="btn" type="submit">Request Free Estimate</button>
   </form>
   <p>Or call us directly: <strong>385-280-7350</strong></p>
