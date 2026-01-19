@@ -156,16 +156,22 @@
 <section id="contact">
   <h2>Get Your Free Quote</h2>
 
-  <form id="quoteForm">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <input type="tel" name="phone" placeholder="Your Phone Number" />
-    <textarea name="message" placeholder="Tell us about your windows"></textarea>
-
-    <button type="submit" class="btn">Get My Free Quote</button>
-  </form>
-
-  <p id="formStatus"></p>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xqeebgna"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </section>
   
 <section>
