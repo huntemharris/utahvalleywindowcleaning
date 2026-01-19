@@ -12,6 +12,7 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #333;
+      overflow-x: hidden;
     }
     header {
       background: #0a3d62;
@@ -32,7 +33,12 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      
       min-height: 90vh;
+      width: 100vw;
+      max-width: none;
+      margin: 0;
+      padding: 0;
     
       display: flex;
       align-items: center;
@@ -69,10 +75,15 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 800px;
       padding: 20px;
     }
-
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 70vh;
+        background-position: center top;
+      }
+    }
     
     .btn {
       display: inline-block;
@@ -91,6 +102,7 @@
       max-width: 1100px;
       margin: auto;
     }
+    
     h2 {
       text-align: center;
       margin-bottom: 30px;
